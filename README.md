@@ -17,7 +17,7 @@ Veri setinde 150 bin satırlık olanı seçtim. Kod aşamasına geçersek;
 Çalışma dizinini default olarak değiştirmek için:
 
 ```
-setwd("/media/safa/FAF09CCAF09C8F0F/Users/SAFA/Downloads/dataset")
+setwd("/media/safa/FAF09CCAF09C8F0F/Users/SAFA/Downloads/Dataset")
 ```
 
 Veri setinin okunmasını sağlamak için:
@@ -156,7 +156,7 @@ fviz_nbclust(df1[,2:3], kmeans, method = 'wss')
 
 Sonuc olarak:
 
-![picture](./pictures/FirstCommand.png)
+![picture](./Pictures/FirstCommand.png)
 
 Tabloda en fazla kırılma olan yer k değerinin en verimli olduğu değerdir. Bunun için k değeri tahmini olarak 2 veya 5 olacağını göstermektedir. Bu yüzden k=2 ve k=5 değerleri için karşılaştırma yapmalıyız.
 
@@ -187,7 +187,7 @@ fviz_cluster(km.res, data=df)+ tma
 
 Sonucunda:
 
-![Clustering-1](./pictures/FIyatlandirma ve Puanlandirma.png)
+![Clustering-1](./Pictures/FIyatlandirma ve Puanlandirma.png)
 
 Grafikte görüldüğü gibi k=2 durumu için pek doğru bir sınıflandırma olmamaktadır. Sadece iki kalite de şarap bulunduğunu ifade eden bir grafiktir. K=5 değerini denemeliyiz ve hangi grafiğin daha doğru olduğuna karar vermeliyiz.
 
@@ -199,7 +199,7 @@ fviz_cluster(km.res, data=df)+ tma
 
 Sonucunda :
 
-![clustering2](./pictures/clustering2.png)
+![clustering2](./Pictures/clustering2.png)
 
 İşaretlenmiş verileri kümesi şarapların fiyatlandırma ve puanlama kategorisine alarak hem uygun fiyatlı hem de kaliteli şarapları sınıflandırmaktadır. İşaretlenmiş sayılar şarapın bulunduğu satırı işaret etmektedir. Clusterların sınıfı ise:
 
@@ -229,7 +229,7 @@ pie(t3,labels = lbls, col=rainbow(length(lbls)),
 
 Grafikten görüldüğü üzere dünya genelinde en fazla üretim yapan ülke %45 ile amerika gözükmektedir.
 
-![sarap uretımı](./pictures/Ulkelerın sarap uretımı.png)
+![sarap uretımı](./Pictures/Ulkelerın sarap uretımı.png)
 
 Son karşılaştırma olarak 150 bin tadım yapılmış üzümlerin puanlandırması ve ülkelere göre karşılaştırmasını yaptım.
 ````
@@ -237,4 +237,4 @@ qplot(data$country,data$points,data=data,geom=c("boxplot", "jitter"),xlab = "Ül
 ````
 qplot fonksiyonunu kullanmak için ggplot2 yi aktif etmeniz gerekmektedir. Kod zaten yeterince açıklayıcıdır. Burada R programlama dilinin becerisini göstermektedir. Bir insanın hayatı boyunca işleyemeyeceği boyutta veriyi 10 dakika içerisinde hatasız olarak vermektedir.
 
-![rplot8](./pictures/Rplot08.png)
+![rplot8](./Pictures/Rplot08.png)
