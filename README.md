@@ -158,7 +158,7 @@ fviz_nbclust (df1 [, 2: 3], kmeans, method = 'wss')
 
 As a result:
 
-![Picture](Pictures/firstcommand.png "First Command")
+![Picture](Pictures/FirstCommand.png "First Command")
 
 The place where the k value is the most broken in the table is the most efficient value. For this, the value of k indicates that it will be an estimated 2 or 5. So we have to compare for k = 2 and k = 5.
 
